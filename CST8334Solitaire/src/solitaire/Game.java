@@ -1,3 +1,4 @@
+package solitaire;
 /**
  * Main method & game board setup
  *
