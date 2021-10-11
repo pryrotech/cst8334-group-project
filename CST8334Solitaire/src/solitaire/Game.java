@@ -9,7 +9,11 @@ package solitaire;
 public class Game {
 	public static void main(String[] args) {
 		//start game
+<<<<<<< HEAD
 		Tableau newGame = new Tableau();
+=======
+		//load game board trest
+>>>>>>> branch 'main' of https://github.com/pryrotech/cst8334-group-project.git
 	  }
 	
 
