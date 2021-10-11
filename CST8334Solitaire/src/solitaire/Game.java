@@ -9,7 +9,7 @@ package solitaire;
 public class Game {
 	public static void main(String[] args) {
 		//start game
-		//load game board test
+		//load game board trest
 	  }
 	
 
