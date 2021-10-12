@@ -24,8 +24,8 @@ public enum Face {
         this.faceString = faceString;
     }
 
-    public int getFace(){
-        return faceValue;
+    public String getFace(){
+        return faceString;
     }
 
     public String printFace(){

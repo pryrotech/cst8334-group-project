@@ -12,6 +12,10 @@ public enum Suit {
         this.suitText = suitText;
     }
 
+    public String getSuitText(){
+        return suitText;
+    }
+
     public String printSuit(){
         return suitText;
     }
