@@ -37,36 +37,37 @@ public class Deck {
 		deck.add(card);
 	}
 
+	public String showDeck() {
+		String showDeck = "";
+		for (Card c: deck) {
+			showDeck += c.toString() + "\n";
+		}
+		return showDeck;
+	}
 
-}
-
-	/**
-	 *
-	 * I've commented this out for testing purposes
-	 *
-	 *
+/**
 	private void shuffle() { //shuffles deck of cards
 		for (int i = 0; i < deck.size(); i++) {
-		      int index = (int)(Math.random() * deck.size());
-		      Card t = this.getCard(i);
-		      this.setCard(i, this.getCard(index));
-		      this.setCard(index, t);
-		    }
+			int index = (int) (Math.random() * deck.size());
+			Card t = this.getCard(i);
+			this.setCard(i, this.getCard(index));
+			this.setCard(index, t);
+		}
 	}
 
 
 	public Card getCard(int index) { //Card getter
-	    if (withinBounds(index)) {
-	      return deck.get(index);
-	    }
-	    return null;
+		if (withinBounds(index)) {
+			return deck.get(index);
+		}
+		return null;
 	}
-	
+
 	private void setCard(int index, Card c) { //Card setter
-	    if (withinBounds(index)) {
-	      deck.set(index, c);
-	    }
-	  }
+		if (withinBounds(index)) {
+			deck.set(index, c);
+		}
+	}
+**/
 
-	 **/
-
+}

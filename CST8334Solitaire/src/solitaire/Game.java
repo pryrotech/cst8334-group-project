@@ -9,6 +9,10 @@ package solitaire;
 public class Game {
 	public static void main(String[] args) {
 		//start game
+		Deck d1 = new Deck();
+		d1.populate();
+		System.out.println(d1.showDeck());
+
 
 		Tableau newGame = new Tableau();
 

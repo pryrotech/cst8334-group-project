@@ -24,4 +24,11 @@ public class Card {
         faceUp = !faceUp;
     }
 
+    public String toString(){
+        String showCard = "";
+        showCard += face.printFace() + " of " + suit.printSuit();
+        return showCard;
+    }
+
+
 }
