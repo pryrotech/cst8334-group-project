@@ -6,39 +6,22 @@ public class Card {
 
     private Suit suit;
     private Face face;
-    private int value;
-    private BufferedImage frontImage, backImage;
-    private boolean faceUp = false;
+    private boolean faceUp;
 
 
 
-    public Card(Face face, Suit suit, int value, BufferedImage frontImage, BufferedImage backImage){
+    public Card(Face face, Suit suit){
         this.face = face;
         this.suit = suit;
-        this.value = value;
-        this.frontImage = frontImage;
-        this.backImage= backImage;
-    }
-
-
-    public Face getFace(){
-        return face;
+        faceUp = true;
     }
 
     public Suit getSuit(){
         return suit;
     }
 
-    public BufferedImage getFrontImage() {
-        return frontImage;
-    }
-
-    public BufferedImage getBackImage() {
-        return backImage;
-    }
-
-    public boolean isFaceUp() {
-        return faceUp;
+    public void flipCard() {
+        faceUp = !faceUp;
     }
 
 }

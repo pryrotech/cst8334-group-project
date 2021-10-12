@@ -16,9 +16,14 @@ public enum Face {
     KING(13);
 
 
-    int value;
+    int faceValue;
 
-    Face(int value) {
-        this.value = value;
+    Face(int faceValue) {
+        this.faceValue = faceValue;
     }
+
+    public int getFace(){
+        return faceValue;
+    }
+
 }
