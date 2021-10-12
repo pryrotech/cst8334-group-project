@@ -11,7 +11,9 @@ public class Game {
 		//start game
 		Deck d1 = new Deck();
 		d1.populate();
-		System.out.println(d1.showDeck());
+		System.out.println("This is a new deck" +  "/n" + d1.showDeck());
+		d1.shuffle();
+		System.out.println("The deck has now been shuffled" + "/n" + d1.showDeck());
 
 
 		Tableau newGame = new Tableau();

@@ -2,6 +2,7 @@ package solitaire;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 /**
  * Deck of cards
@@ -45,16 +46,20 @@ public class Deck {
 		return showDeck;
 	}
 
-/**
-	private void shuffle() { //shuffles deck of cards
-		for (int i = 0; i < deck.size(); i++) {
-			int index = (int) (Math.random() * deck.size());
-			Card t = this.getCard(i);
-			this.setCard(i, this.getCard(index));
-			this.setCard(index, t);
+	public void shuffle() { //shuffles deck of cards
+		for (int i = this.deck.size(); i > 1; i--) {
+			Random r = new Random();
+			int index = r.nextInt(i-1);
+
+			Card topCard = this.deck.remove(i-1);
+			Card randomCard = this.deck.remove(index);
+
+			this.deck.add(index, topCard);
+			this.deck.add(randomCard);
+
 		}
 	}
-
+/**
 
 	public Card getCard(int index) { //Card getter
 		if (withinBounds(index)) {
