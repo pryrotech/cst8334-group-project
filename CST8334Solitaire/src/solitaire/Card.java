@@ -6,14 +6,16 @@ public class Card {
 
     private Suit suit;
     private Face face;
+    private int value;
     private BufferedImage frontImage, backImage;
     private boolean faceUp = false;
 
 
 
-    public Card(Face face, Suit suit, BufferedImage frontImage, BufferedImage backImage){
+    public Card(Face face, Suit suit, int value, BufferedImage frontImage, BufferedImage backImage){
         this.face = face;
         this.suit = suit;
+        this.value = value;
         this.frontImage = frontImage;
         this.backImage= backImage;
     }

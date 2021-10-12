@@ -13,5 +13,12 @@ public enum Face {
     TEN(10),
     JACK(11),
     QUEEN(12),
-    KING(13)
+    KING(13);
+
+
+    int value;
+
+    Face(int value) {
+        this.value = value;
+    }
 }
